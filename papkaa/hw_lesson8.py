@@ -39,9 +39,9 @@ try:
     elif operation == '*':
         result = num1 * num2
     elif operation == '/':
-        if num2 == 0:
-            raise ZeroDivisionError("Деление на ноль невозможно!")
         if num1 == 0:
+            raise ZeroDivisionError("Деление на ноль невозможно!")
+        if num2 == 0:
             raise ZeroDivisionError("Деление на ноль невозможно!")
         result = num1 / num2
     elif operation == '**':
